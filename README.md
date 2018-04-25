@@ -1,4 +1,4 @@
-# Simple UI-Demo with React Native
+# Simple demo Page with react.js
 
 Simple react.js with with a basic functionality.
 
