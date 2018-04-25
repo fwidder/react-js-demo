@@ -73,6 +73,11 @@ class App extends Component {
             placeholder="Type here!"
             value={this.state.inputText}
             onChange={evt => this.updateInputValue(evt)}
+            onKeyPress={event => {
+              if (event.key === 'Enter') {
+                this.sendMessage();
+              }
+            }}
           />
           <Button color="primary" onClick={this.sendMessage}>
             Send
