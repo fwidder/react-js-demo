@@ -28,7 +28,7 @@ npm install
 npm run start
 ```
 
-The Page should not automatically be opened in your Browser.
+The Page should now automatically be opened in your Browser. If not go to ``` http://localhost:3000/ ```.
 
 ### Step 4 - Start Coding
 
