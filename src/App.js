@@ -36,6 +36,18 @@ class App extends Component {
     this.setState({ inputText: '' });
   }
 
+  scrollToBottom = () => {
+    this.messagesEnd.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  componentDidMount() {
+    this.scrollToBottom();
+  }
+
+  componentDidUpdate() {
+    this.scrollToBottom();
+  }
+
   updateInputValue(evt) {
     this.setState({
       inputText: evt.target.value
@@ -66,6 +78,12 @@ class App extends Component {
             Send
           </Button>
         </Row>
+        <div
+          style={{ float: 'left', clear: 'both' }}
+          ref={el => {
+            this.messagesEnd = el;
+          }}
+        />
       </div>
     );
   }
