@@ -14,8 +14,8 @@ class App extends Component {
       col: [
         { key: 'sender', label: 'Sender:' },
         {
-          key: 'reciever',
-          label: 'Reciever:'
+          key: 'receiver',
+          label: 'Receiver:'
         },
         {
           key: 'message',
@@ -29,7 +29,7 @@ class App extends Component {
     const tmp = this.state.data;
     tmp.push({
       sender: 'ONE',
-      reciever: 'TWO',
+      receiver: 'TWO',
       message: this.state.inputText
     });
     this.setState({ data: tmp });
